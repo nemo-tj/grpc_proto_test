@@ -1,0 +1,22 @@
+syntax = "proto3";
+ 
+package test.idl;
+ 
+message Student{
+    int32 id=1;
+    string name=2;
+    int32 score=3;
+}
+ 
+message Class{
+    int32 class_id=1;
+    repeated Student students=2;
+}
+ 
+message AvgScore{
+    int32 score=1;
+}
+ 
+service Test{
+    rpc GetAvgScore(Class) returns (AvgScore){}
+}
