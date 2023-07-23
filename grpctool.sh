@@ -1,4 +1,5 @@
 #! /bin/bash
+set -x
 gen_dir=./pb_cc
 mkdir -p $gen_dir
 protoc --cpp_out=${gen_dir} *.proto

@@ -18,12 +18,15 @@ include_directories(${PROTO_PATH})
  
 foreach(TARGET client server)
     add_executable(${TARGET} "${TARGET}.cc"
-        ${HW_PROTO_SRCS}
-        ${HW_GRPC_SRCS}
-        ${PROTO_FILES})
+        ${PROTO_FILES}
+        )
  
     target_link_libraries(${TARGET}
         gRPC::grpc++
         gRPC::grpc++_reflection
         protobuf::libprotobuf)
 endforeach()
+
+#        ${HW_PROTO_SRCS}
+#        ${HW_GRPC_SRCS}
+#        ${PROTO_FILES}
