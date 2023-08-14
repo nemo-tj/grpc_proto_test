@@ -6,7 +6,7 @@
 #include <grpcpp/health_check_service_interface.h>
 #include <grpcpp/ext/proto_server_reflection_plugin.h>
  
-#include "test.grpc.pb.h"
+#include "proto/test.grpc.pb.h"
 using namespace std;
 using grpc::Server;
 using grpc::ServerBuilder;

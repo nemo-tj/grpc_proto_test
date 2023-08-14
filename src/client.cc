@@ -3,7 +3,7 @@
 #include <string>
  
 #include <grpcpp/grpcpp.h>
-#include "test.grpc.pb.h"
+#include "proto/test.grpc.pb.h"
  
 using grpc::Channel;
 using grpc::ClientContext;
